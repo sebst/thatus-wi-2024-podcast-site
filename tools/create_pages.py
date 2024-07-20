@@ -1,4 +1,5 @@
 import json
+import textwrap
 import os
 
 json_dir = 'data/podcasts'
@@ -17,7 +18,14 @@ for json_file in os.listdir(json_dir):
         with open(content_file, 'w') as f:
             f.write('---\n')
             for key, value in data.items():
-                if key != 'description':
+                if key == 'description':
+                    f.write(f'{key}: |\n')
+                    value = value.strip()
+                    # value = textwrap.fill(value, width=80, initial_indent='  ', subsequent_indent='  ')
+                    value = textwrap.indent(value, '  ')
+                    f.write(f'{value}\n')
+                    # f.write(f'  {textwrap.indent(value, " " * 3)}\n')
+                else:
                     f.write(f'{key}: {value}\n')
             f.write('---\n')
             f.write(f'# {data["name"]}\n\n')

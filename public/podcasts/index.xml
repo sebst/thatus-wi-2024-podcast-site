@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Podcasts on My New Hugo Site</title>
+    <title>Podcasts on My Podcast List</title>
     <link>http://localhost:1313/podcasts/</link>
-    <description>Recent content in Podcasts on My New Hugo Site</description>
+    <description>Recent content in Podcasts on My Podcast List</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/podcasts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
@@ -35,6 +34,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/podcasts/talk-python-to-me/</guid>
       <description>Talk Python To Me Talk Python to Me is a weekly podcast hosted by developer and entrepreneur Michael Kennedy. We dive deep into the popular packages and software developers, data scientists, and incredible hobbyists doing amazing things with Python. If you&amp;rsquo;re new to Python, you&amp;rsquo;ll quickly learn the ins and outs of the community by hearing from the leaders. And if you&amp;rsquo;ve been Pythoning for years, you&amp;rsquo;ll learn about your favorite packages and the hot new ones coming out of open source.</description>
+    </item>
+    <item>
+      <title></title>
+      <link>http://localhost:1313/podcasts/that/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/podcasts/that/</guid>
+      <description>THAT Welcome to THAT, a daily podcast hosted by Clark Sell and the crew at THAT Conference.&#xA;Our goal with this podcast is simple. I want to tell your story. I want to document these experiences in such that we can all help one another. I know that sounds a bit abstract, but over the years, I’ve talked with thousands of professionals who all have an awesome and unique story. I’ve loved hearing every one of them, and they’ve each inspired me in some way.</description>
     </item>
   </channel>
 </rss>
