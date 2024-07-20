@@ -1,0 +1,40 @@
+name: Sync podcasts from external repository
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [podcast-update]
+
+jobs:
+  publishing:
+    name: Sync podcasts from external repository
+    runs-on: ubuntu-24.04
+    defaults:
+      run:
+        working-directory: tools
+    steps:
+      - uses: actions/checkout@v4.1.7
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Sync podcasts and create hugo pages
+        run: |
+          python sync_data_repo.py
+          python create_pages.py
+
+      # Commit results back to repository
+      - uses: stefanzweifel/git-auto-commit-action@v5.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          commit_message: Gnerate podcast data
+          branch: main
+          commit_user_name: Podcast Bot
+          commit_user_email: podcastbot@bascodes.com
+          commit_author: Podcast Bot <podcastbot@bascodes.com>
