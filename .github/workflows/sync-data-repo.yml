@@ -9,9 +9,9 @@ jobs:
   publishing:
     name: Sync podcasts from external repository
     runs-on: ubuntu-24.04
-    defaults:
-      run:
-        working-directory: tools
+    # defaults:
+    #   run:
+    #     working-directory: tools
     steps:
       - uses: actions/checkout@v4.1.7
       - name: Set up Python 3.12
@@ -25,8 +25,8 @@ jobs:
 
       - name: Sync podcasts and create hugo pages
         run: |
-          python sync_data_repo.py
-          python create_pages.py
+          python tools/sync_data_repo.py
+          python tools/create_pages.py
 
       # Commit results back to repository
       - uses: stefanzweifel/git-auto-commit-action@v5.0.1
