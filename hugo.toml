@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://sebst.github.io/thatus-wi-2024-podcast-site/'
 languageCode = 'en-us'
 title = 'My Podcast List'
 theme = 'ananke'
