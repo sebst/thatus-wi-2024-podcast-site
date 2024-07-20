@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/Users/sebst/Code/sebst/thatus-wi-2024-podcast-site",
+	"sourceRoot": "/Users/sebst/Dropbox/Code/sebst/thatus-wi-2024-podcast-site",
 	"sources": [
 		"ananke/css/main.css"
 	],

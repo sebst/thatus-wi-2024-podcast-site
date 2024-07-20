@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article>
+    <h1>{{ .Title }}</h1>
+    <p>{{ .Params.description }}</p>
+    <ul>
+        {{ range $key, $value := .Params }}
+        <li><strong>{{ $key }}:</strong> {{ $value }}</li>
+        {{ end }}
+    </ul>
+</article>
+{{ end }}
