@@ -1,15 +1,8 @@
-++
-slug: that
-name: THAT
-feedUrl: https://askthat.libsyn.com/rss
-websiteUrl: http://askthat.libsyn.com/website
-author: THAT Conference
-episodeCount: 76
-categories: {'102': 'Technology', '55': 'News'}
-tags: ['THAT Conference', 'Open Source', 'Web Development']
-image: that.png
-podcastIndexId: 940219
-++
++++
+title = 'My First Post'
+date = 2024-01-14T07:07:07+01:00
+draft = true
++++
 
 # THAT
 

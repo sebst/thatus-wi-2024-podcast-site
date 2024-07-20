@@ -1,5 +1,5 @@
 ---
-title: "Items"
+title: "Podcasts"
 ---
 
-This is a list of items.
+This is a list of podcasts.

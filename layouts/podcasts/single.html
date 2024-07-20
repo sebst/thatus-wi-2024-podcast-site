@@ -1,11 +1,29 @@
 {{ define "main" }}
-<article>
-    <h1>{{ .Title }}</h1>
-    <p>{{ .Params.description }}</p>
-    <ul>
-        {{ range $key, $value := .Params }}
-        <li><strong>{{ $key }}:</strong> {{ $value }}</li>
-        {{ end }}
-    </ul>
+<article style="">
+
+
+
+
+<h3 id="{{ .Params.slug }}">{{ .Params.name }}</h3>
+
+{{ $image := .Resources.GetMatch "{{ .Params.image }}" }}
+{{ with $image }}
+<img align="right" width="215" height="215" src="{{ .RelPermalink }}" />
+{{ end }}
+
+
+{{ with .Params.image }}
+<img align="right" width="255" height="255" src="{{ "podcasts/" | relURL }}{{ . }}" alt="{{ $.Name }}">
+{{ end }}
+
+
+<p>{{ .Params.description }}</p>
+
+<ul>
+<li>Number of published episodes: {{ .Params.episodeCount }}</li>
+<li><a href="{{ .Params.websiteUrl }}">{{ .Params.name }} Website</a></li>
+<li><a href="{{ .Params.feedUrl }}">{{ .Params.name }} Feed</a></li>
+</ul>
+
 </article>
 {{ end }}
