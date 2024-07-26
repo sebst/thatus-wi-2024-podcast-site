@@ -6,7 +6,7 @@ description: |
 feedUrl: https://feeds.acast.com/public/shows/655148df2861630012a1d01b
 websiteUrl: https://shows.acast.com/contejas-code
 author: Tejas Kumar
-episodeCount: 32
+episodeCount: 33
 categories: {'102': 'Technology'}
 tags: ['Open Source', 'Web Development', 'JavaScript']
 image: ./contejas-code.jpeg

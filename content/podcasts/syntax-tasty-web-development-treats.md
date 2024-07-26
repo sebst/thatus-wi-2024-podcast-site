@@ -6,7 +6,7 @@ description: |
 feedUrl: https://feed.syntax.fm/rss
 websiteUrl: https://syntax.fm
 author: Wes Bos & Scott Tolinski - Full Stack JavaScript Web Developers
-episodeCount: 800
+episodeCount: 801
 categories: {'102': 'Technology', '55': 'News'}
 tags: ['Web Development', 'JavaScript', 'Full-Stack']
 image: ./syntax-tasty-web-development-treats.png
