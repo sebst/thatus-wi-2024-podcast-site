@@ -6,7 +6,7 @@ description: |
 feedUrl: https://talkpython.fm/episodes/rss
 websiteUrl: https://talkpython.fm/
 author: Michael Kennedy (@mkennedy)
-episodeCount: 471
+episodeCount: 472
 categories: {'102': 'Technology'}
 tags: ['python\r', 'programming']
 image: ./talk-python-to-me.png
